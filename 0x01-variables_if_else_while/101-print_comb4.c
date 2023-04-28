@@ -15,7 +15,7 @@ for (num1 = 0; num1 != 8; num1++)
 for (num2 = num1 + 1; num2 != 9; num2++)
 {
 num3 = num2 + 1;
-do{
+do {
 putchar('0' + num1);
 putchar('0' + num2);
 putchar('0' + num3);
@@ -25,7 +25,7 @@ putchar(',');
 putchar(32);
 }
 num3++;
-}while (num3 != 10);
+} while (num3 != 10);
 }
 }
 putchar('\n');
