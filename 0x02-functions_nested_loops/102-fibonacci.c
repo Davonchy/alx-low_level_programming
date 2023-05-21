@@ -8,9 +8,9 @@
  */
 int main(void)
 {
-long unsigned num1 = 1;
-long unsigned num2 = 2;
-long unsigned res;
+unsigned long num1 = 1;
+unsigned long num2 = 2;
+unsigned long res;
 int index;
 index = 50 - 2;
 printf("%lu, %lu, ", num1, num2);
