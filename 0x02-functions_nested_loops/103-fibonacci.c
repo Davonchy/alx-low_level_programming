@@ -12,8 +12,8 @@ int main(void)
 unsigned long num1 = 0;
 unsigned long num2 = 1;
 unsigned long res;
-float sum;
-while (1)
+unsigned long sum;
+while (res)
 {
 res = num1 + num2;
 if (res > 4000000)
@@ -23,6 +23,6 @@ sum += res;
 num1 = num2;
 num2 = res;
 }
-printf("%.0f\n", sum);
+printf("%lu\n", sum);
 return (0);
 }
