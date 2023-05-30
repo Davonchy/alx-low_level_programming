@@ -11,12 +11,12 @@ int index;
 int gap;
 if (n > 0)
 {
-for (index = 1; index <= n; index++)
+for (index = 0; index < n; index++)
 {
-for (gap = 1; gap <= index; gap++)
+for (gap = 0; gap < index; gap++)
 _putchar(' ');
 _putchar('\\');
-if (index == n)
+if (index == n - 1)
 continue;
 _putchar('\n');
 }
