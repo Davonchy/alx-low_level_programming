@@ -11,16 +11,19 @@ int main(void)
 {
 unsigned long int count = 612852475143;
 unsigned long int prime;
-prime = 3;
-while (prime < count / 2)
+while (prime < (count / 2))
+{
+if ((count % 2) == 0)
+{
+count = count / 2;
+continue;
+}
+for (prime = 3; prime < (count / 2); count = count + 2)
 {
 if ((count % prime) == 0)
-{
-if ((prime % 3) == 2)
-printf("%lu ", prime);
+count = count / prime;
 }
-prime += 2;
 }
-printf("\n");
+printf("%lu\n", count);
 return (0);
 }
