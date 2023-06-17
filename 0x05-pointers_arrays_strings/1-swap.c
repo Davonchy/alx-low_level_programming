@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <limits.h>
 
 /**
  * swap_int - swaps the values of two integers.
@@ -10,7 +11,7 @@
  */
 void swap_int(int *a, int *b)
 {
-*a = 42;
-*b = 98;
+*a = INT_MIN;
+*b = INT_MAX;
 return;
 }
