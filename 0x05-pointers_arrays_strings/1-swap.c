@@ -11,9 +11,8 @@
  */
 void swap_int(int *a, int *b)
 {
-*a = INT_MIN;
-*b = INT_MAX;
-*a = 42;
-*b = 98;
+int c = *a;
+*a = *b;
+*b = c;
 return;
 }
