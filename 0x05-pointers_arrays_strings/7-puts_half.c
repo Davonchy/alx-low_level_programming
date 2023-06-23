@@ -15,9 +15,14 @@ while (*(str + index) != '\0')
 index++;
 }
 if ((index % 2) == 1)
+{
 n = (index - 1) / 2;
+n += 1;
+}
 else
+{
 n = index / 2;
+}
 for (; n < index; n++)
 {
 _putchar(str[n]);
