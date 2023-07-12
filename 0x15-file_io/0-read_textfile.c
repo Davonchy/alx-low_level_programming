@@ -5,7 +5,7 @@
  * POSIX standard output.
  * @filename: The file name
  * @letters: The text to read and write.
- * 
+ *
  * Return: the actual number of letters it could read
  * and print
  * else return 0 - if the file can not be opened or read,
@@ -25,7 +25,7 @@ if (nptr == NULL)
 return (0);
 fd = open(filename, O_RDONLY);
 if (fd == -1)
-return(0);
+return (0);
 n_In = read(fd, nptr, letters);
 if (n_In == -1)
 return (0);
