@@ -13,7 +13,7 @@ int fd;
 int count;
 int mode;
 if (filename == NULL)
-return(-1);
+return (-1);
 fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 if (fd == -1)
 return (-1);
