@@ -17,5 +17,5 @@ if ((*n >> index) & 1)
 *n -= 1 << index;
 return (1);
 }
-return (-1);
+return (1);
 }
