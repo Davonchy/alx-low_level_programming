@@ -11,15 +11,24 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
+unsigned int num;
 int index;
-unsigned int num = 0;
-if (!b)
+if (!b || !*b)
 return (0);
-for (index = 0; b[index]; index++)
+num = 0;
+index = 0;
+while (b[index])
 {
-if (b[index] <'0' || b[index] > '1')
+if (b[index] > 49)
 return (0);
-num = 2 * num + (b[index] - '0');
+else if (b[index] == 49)
+{
+num = num << 1;
+num = num + 1;
+}
+else
+num = num << 1;
+index++;
 }
 return (num);
 }
