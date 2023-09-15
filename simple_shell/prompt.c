@@ -4,7 +4,7 @@
 #include <unistd.h>
 #include <sys/wait.h>
 
-#define MAX_INPUT_SIZE 256
+#define MAX_INPUT_SIZE 1024
 
 int main() {
     char input[MAX_INPUT_SIZE];
@@ -59,4 +59,3 @@ int main() {
 
     return 0;
 }
-
